@@ -25,14 +25,14 @@ Across all Python projects in this repository, you will find a consistent "Level
 - **[Level 6: Precision Physics Method](./Projects/Python/Beginner-Projects/calculator/calculator-6/)** (`math` and `decimal`).
 - **[Level 7: The Pro GUI Edition](./Projects/Python/Beginner-Projects/calculator/calculator-7/)** (Advanced `tkinter` & Keyboard Binding).
 
-#### 📝 2. To-Do List Project
+#### 2. To-Do List Project
 *Learn data structures, persistent storage, and memory management.*
 - **[Level 1: The Memory Track](./Projects/Python/Beginner-Projects/todo-list/todo-1/)** (Lists, while-loops).
 - **[Level 2: The File Keeper](./Projects/Python/Beginner-Projects/todo-list/todo-2/)** (File I/O `.txt`).
 - **[Level 3: The JSON Database](./Projects/Python/Beginner-Projects/todo-list/todo-3/)** (`json` library for structured data).
 - **[Level 4: The Visual Planner](./Projects/Python/Beginner-Projects/todo-list/todo-4/)** (A beautiful `tkinter` window application).
 
-#### 🔐 3. Random Password Generator
+#### 3. Random Password Generator
 *Learn string manipulation, randomization algorithms, and security basics.*
 - **[Level 1: Basic Logic](./Projects/Python/Beginner-Projects/password-gen/password-1/)** (`random` built-in library).
 - **[Level 2: Configurable OOP](./Projects/Python/Beginner-Projects/password-gen/password-2/)** (`string` built-in library and customizable rules).
@@ -43,6 +43,26 @@ Across all Python projects in this repository, you will find a consistent "Level
 - **[Level 1: The Basic Loop](./Projects/Python/Beginner-Projects/number-guesser/guesser-1/)** (While-loops and random matching).
 - **[Level 2: Bulletproof Code](./Projects/Python/Beginner-Projects/number-guesser/guesser-2/)** (`try/except ValueError` to stop crashes).
 - **[Level 3: Persistent High Scores](./Projects/Python/Beginner-Projects/number-guesser/guesser-3/)** (Tracking best scores via File I/O).
+
+#### 🖐️ 5. Rock, Paper, Scissors
+*Learn game logic, randomization, and user input validation.*
+- **[Level 1: Classic Game](./Projects/Python/Beginner-Projects/rock-paper-scissors/rps-1/)** (Game mechanics and score tracking).
+
+#### 🎯 6. Hangman Game
+*Learn string manipulation, loops, and game state management.*
+- **[Level 1: Word Guessing](./Projects/Python/Beginner-Projects/hangman/hangman-1/)** (Visual hangman and word management).
+
+#### 🏦 7. Bank Account Manager
+*Learn object-oriented programming, classes, and financial logic.*
+- **[Level 1: Basic Banking](./Projects/Python/Beginner-Projects/bank-account/account-1/)** (Account management and transactions).
+
+#### 📇 8. Contact Book
+*Learn data structures, search algorithms, and CRUD operations.*
+- **[Level 1: Contact Management](./Projects/Python/Beginner-Projects/contact-book/contact-1/)** (Add, search, update, delete contacts).
+
+####  9. Hello, World! Masterclass
+*The ultimate "Hello, World!" experience - from simplest to most complex methods!*
+- **[Level 1: The Complete Journey](./Projects/Python/Beginner-Projects/Hello, world/)** (35 different methods from beginner to expert level!)
 
 ### 🚀 Intermediate Projects
 *These projects require connecting to the internet, using databases, and `pip install`.*
@@ -78,12 +98,17 @@ C is a low-level, compiled language. Unlike Python, there is no "magic" involved
 - **[Level 1: Basic I/O](./Projects/C/Beginner-Projects/greeter/greeter-1/)** (Using `printf` and `scanf`).
 
 #### 🧮 2. Terminal Calculator
-*Learn control flow and repetitive operations.*
-- **[Level 2: The Switch Loop](./Projects/C/Beginner-Projects/calculator/calc-2/)** (Using `switch/case` and `while` loops).
+*Learn control flow, functions, and menu systems.*
+- **[Level 1: Basic Operations](./Projects/C/Beginner-Projects/calculator/calc-1/)** (Switch-case and basic arithmetic).
+- **[Level 2: Modular Design](./Projects/C/Beginner-Projects/calculator/calc-2/)** (Functions and menu systems).
 
-#### 📝 3. Memory-Managed To-Do List
+#### 🎲 3. Number Guessing Game
+*Learn randomization, loops, and game logic.*
+- **[Level 1: Basic Game](./Projects/C/Beginner-Projects/number-guesser/guess-1/)** (Random numbers and input validation).
+
+#### 📝 4. Memory-Managed To-Do List
 *The Ultimate C Boss! Learn how to manage the computer's physical RAM.*
-- **[Level 4: Structs and Pointers](./Projects/C/Beginner-Projects/todo-list/todo-4/)** (Using `malloc()` to dynamically allocate memory, and `free()` to prevent leaks!).
+- **[Level 1: Struct-Based Manager](./Projects/C/Beginner-Projects/todo-list/todo-1/)** (Structs, arrays, and menu systems).
 
 ---
 *Happy Coding!* 💻
