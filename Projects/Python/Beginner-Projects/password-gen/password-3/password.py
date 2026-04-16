@@ -31,7 +31,7 @@ class PasswordApp:
         self.display_var = tk.StringVar(value="Click Generate 👇")
         # We use an Entry box set to 'readonly' so the user can highlight and copy the password!
         self.display = tk.Entry(self.root, textvariable=self.display_var, font=("Courier", 18), 
-                                bg="#2b2b36", fg="#ffffff", justify="center", state="readonly", relief="flat")
+                                bg="#2b2b36", fg="#FFD700", justify="center", state="readonly", relief="flat")
         self.display.pack(fill="x", padx=30, ipady=15)
 
         # --- LENGTH SLIDER ---
