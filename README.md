@@ -45,6 +45,19 @@ Each language has a **level system** that builds skills progressively:
 -  Challenges to test your skills
 -  Troubleshooting guide
 
+### 🛠️ Dependency Management
+**Python Projects**: Each intermediate project includes `requirements.txt` with exact package versions:
+```bash
+pip install -r requirements.txt
+```
+
+**C Projects**: All projects use standard C libraries only. No external dependencies needed!
+
+### 🧪 Professional Testing
+- **Python**: `pytest` framework for unit testing
+- **C**: Unity-style testing framework included
+- **Test-driven development** examples provided
+
 ---
 
 ## 🐍 PYTHON PROGRAMMING
@@ -72,48 +85,42 @@ Across all Python projects in this repository, you will find a consistent "Level
 *Learn data structures, persistent storage, and memory management.*
 - **[Level 1: The Memory Track](./Projects/Python/Beginner-Projects/todo-list/todo-1/)** (Lists, while-loops).
 - **[Level 2: The File Keeper](./Projects/Python/Beginner-Projects/todo-list/todo-2/)** (File I/O `.txt`).
-- **[Level 3: The JSON Database](./Projects/Python/Beginner-Projects/todo-list/todo-3/)** (`json` library for structured data).
-- **[Level 4: The Visual Planner](./Projects/Python/Beginner-Projects/todo-list/todo-4/)** (A beautiful `tkinter` window application).
-
-#### 3. Random Password Generator
-*Learn string manipulation, randomization algorithms, and security basics.*
-- **[Level 1: Basic Logic](./Projects/Python/Beginner-Projects/password-gen/password-1/)** (`random` built-in library).
-- **[Level 2: Configurable OOP](./Projects/Python/Beginner-Projects/password-gen/password-2/)** (`string` built-in library and customizable rules).
-- **[Level 3: Visual Generator](./Projects/Python/Beginner-Projects/password-gen/password-3/)** (`tkinter` dashboard with sliders).
-
-#### 🎲 4. Number Guessing Game
 *Learn control flow, exception handling, and basic algorithms.*
 - **[Level 1: The Basic Loop](./Projects/Python/Beginner-Projects/number-guesser/guesser-1/)** (While-loops and random matching).
 - **[Level 2: Bulletproof Code](./Projects/Python/Beginner-Projects/number-guesser/guesser-2/)** (`try/except ValueError` to stop crashes).
 - **[Level 3: Persistent High Scores](./Projects/Python/Beginner-Projects/number-guesser/guesser-3/)** (Tracking best scores via File I/O).
 
-#### 🖐️ 5. Rock, Paper, Scissors
+#### 🖐️ 3. Rock, Paper, Scissors
 *Learn game logic, randomization, and user input validation.*
 - **[Level 1: Classic Game](./Projects/Python/Beginner-Projects/rock-paper-scissors/rps-1/)** (Game mechanics and score tracking).
 
-#### 🎯 6. Hangman Game
+#### 🎯 4. Hangman Game
 *Learn string manipulation, loops, and game state management.*
 - **[Level 1: Word Guessing](./Projects/Python/Beginner-Projects/hangman/hangman-1/)** (Visual hangman and word management).
 
-#### 🏦 7. Bank Account Manager
+#### 🏦 5. Bank Account Manager
 *Learn object-oriented programming, classes, and financial logic.*
 - **[Level 1: Basic Banking](./Projects/Python/Beginner-Projects/bank-account/account-1/)** (Account management and transactions).
 
-#### 📇 8. Contact Book
+#### 📇 6. Contact Book
 *Learn data structures, search algorithms, and CRUD operations.*
 - **[Level 1: Contact Management](./Projects/Python/Beginner-Projects/contact-book/contact-1/)** (Add, search, update, delete contacts).
 
-#### 🌡️ 9. Temperature Converter
+#### 🌡️ 7. Temperature Converter
 *Learn mathematical operations, functions, and unit conversions.*
 - **[Level 1: Unit Conversion](./Projects/Python/Beginner-Projects/temperature-converter/converter-1/)** (Temperature scales and conversion formulas).
 
-#### 📊 10. Student Grade Manager
+#### 📊 8. Student Grade Manager
 *Learn OOP, data structures, and statistical calculations.*
 - **[Level 1: Grade Management](./Projects/Python/Beginner-Projects/student-grades/grades-1/)** (Classes, averages, letter grades).
 
-####  11. Hello, World! Masterclass
+#### 🎮 9. Text Adventure Game
+*Learn game development, state management, and interactive storytelling.*
+- **[Level 2: Interactive Storytelling](./Projects/Python/Beginner-Projects/text-adventure/game-1/)** (Room exploration, combat, inventory systems).
+
+####  10. Hello, World! Masterclass
 *The ultimate "Hello, World!" experience - from simplest to most complex methods!*
-- **[Level 1: The Complete Journey](./Projects/Python/Beginner-Projects/Hello, world/)** (35 different methods from beginner to expert level!)
+- **[Level 1: The Complete Journey](./Projects/Python/Beginner-Projects/hello-world/)** (35 different methods from beginner to expert level!).
 
 ### 🚀 Intermediate Projects
 *These projects require connecting to the internet, using databases, and `pip install`.*
@@ -165,9 +172,13 @@ C is a low-level, compiled language. Unlike Python, there is no "magic" involved
 - **[Level 1: Basic Operations](./Projects/C/Beginner-Projects/calculator/calc-1/)** (Switch-case and basic arithmetic).
 - **[Level 2: Modular Design](./Projects/C/Beginner-Projects/calculator/calc-2/)** (Functions and menu systems).
 
-#### 3. Number Guessing Game
+#### 🎲 3. Number Guessing Game
 *Learn randomization, loops, and game logic.*
 - **[Level 1: Basic Game](./Projects/C/Beginner-Projects/number-guesser/guess-1/)** (Random numbers and input validation).
+
+#### 🎮 4. Text RPG Game
+*Learn game development, character systems, and combat mechanics.*
+- **[Level 3: Game Systems](./Projects/C/Beginner-Projects/rpg-game/game-1/)** (Character stats, combat, leveling system).
 
 #### 4. Memory-Managed To-Do List
 *The Ultimate C Boss! Learn how to manage the computer's physical RAM.*
