@@ -1,0 +1,64 @@
+# Compiled files
+*.exe
+*.o
+*.obj
+*.out
+*.dll
+*.so
+*.dylib
+
+# Python files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Data files
+*.dat
+*.db
+*.sqlite
+*.sqlite3
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.temp

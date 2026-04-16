@@ -2,6 +2,49 @@
 
 Welcome to the ultimate repository for learning programming! This collection is designed to help learners progress from **absolute beginners** to **intermediate developers** through hands-on projects, now spanning multiple languages!
 
+## 📚 Quick Start Guide
+
+### 📝 For Complete Beginners
+1. **Choose your language**: Python (easier) or C (fundamentals)
+2. **Install the tools**: See setup guides below
+3. **Start with Level 1**: Follow the learning path
+4. **Compile and run**: Each project has instructions
+
+### 🛠️ Setup Instructions
+- **Python Setup**: [Python Setup Guide](./Projects/Python/Beginner-Projects/README.md)
+- **C Setup**: [C Setup Guide](./Projects/C/Beginner-Projects/README.md)
+
+### 🗂️ Repository Structure
+```
+beginner-projects/
+  Projects/
+    Python/
+      Beginner-Projects/    # 11 projects, Levels 1-3
+      Intermediate-Projects/ # 5 projects, Levels 9-10+
+    C/
+      Beginner-Projects/    # 6 projects, Levels 1-4
+      Intermediate-Projects/ # 2 projects, Levels 5-6+
+```
+
+## 📊 How This Repository Works
+
+### 🚫 No Executable Files 
+This repository contains **source code only**. You'll learn to compile and run programs yourself - this is part of the learning process!
+
+### 📈 Progressive Learning
+Each language has a **level system** that builds skills progressively:
+- **Level 1-3**: Core concepts (no external libraries)
+- **Level 4-6**: Standard libraries and intermediate concepts  
+- **Level 7-8**: GUI and visual applications
+- **Level 9-10+**: Real-world applications (APIs, databases, web)
+
+### 📁 Each Project Includes
+-  Source code with detailed comments
+-  README with step-by-step instructions
+-  Learning objectives and key concepts
+-  Challenges to test your skills
+-  Troubleshooting guide
+
 ---
 
 ## 🐍 PYTHON PROGRAMMING
@@ -79,21 +122,29 @@ Across all Python projects in this repository, you will find a consistent "Level
 - **[Level 9: The Raw Network Call](./Projects/Python/Intermediate-Projects/weather-app/weather-9/)** (`pip install requests` to fetch API JSON).
 - **[Level 10: Live Visual Dashboard](./Projects/Python/Intermediate-Projects/weather-app/weather-10/)** (Asynchronous threading to prevent GUI freezing).
 
-#### 💸 2. Personal Expense Tracker (Relational Databases)
+#### 2. Personal Expense Tracker (Relational Databases)
 - **[Level 9: The SQLite Database](./Projects/Python/Intermediate-Projects/expense-tracker/expense-9/)** (`sqlite3` built-in library, SQL Queries).
 - **[Level 10: Advanced Reporting](./Projects/Python/Intermediate-Projects/expense-tracker/expense-10/)** (`pip install prettytable`, SQL `SUM` and `GROUP BY`).
 
-#### 🌐 4. Web API Client
+#### 3. Web API Client
 *Learn HTTP requests, JSON parsing, and external service integration.*
 - **[Level 9: API Integration](./Projects/Python/Intermediate-Projects/web-api/api-1/)** (`requests` library, error handling, demo weather API).
 
-#### 🕸️ 5. Web Scraper Data Miner (HTML Parsing)
-- **[Level 9: The HTML Extractor](./Projects/Python/Intermediate-Projects/web-scraper/scraper-9/)** (`pip install beautifulsoup4` to scrape text from websites).
+#### 4. Web Scraper Data Miner (HTML Parsing)
+- **[Level 9: The HTML Extractor](./Projects/Python/Intermediate-Projects/web-scraper/scraper-1/)** (`pip install beautifulsoup4` to scrape text from websites).
 - **[Level 10: The CSV Exporter](./Projects/Python/Intermediate-Projects/web-scraper/scraper-10/)** (Automatically scraping multi-page sites and saving to Excel `.csv`).
+
+#### 5. Async Weather Dashboard
+*Learn threading and asynchronous programming to prevent GUI freezing.*
+- **[Level 10: GUI Threading](./Projects/Python/Intermediate-Projects/async-weather/weather-1/)** (`tkinter` + `threading` for responsive interfaces).
+
+#### 6. Unit Testing Framework
+*Learn professional testing practices - what separates hobbyists from professionals.*
+- **[Level 10: Test-Driven Development](./Projects/Python/Intermediate-Projects/unit-testing/test-1/)** (`pytest` framework, test design, code quality).
 
 ---
 
-## ⚙️ C PROGRAMMING
+## C PROGRAMMING
 C is a low-level, compiled language. Unlike Python, there is no "magic" involved. We must declare our variables strictly and manually build our logic. 
 *Note: To run these, you require a compiler like `gcc` (MinGW-w64 on Windows).*
 
@@ -121,24 +172,32 @@ C is a low-level, compiled language. Unlike Python, there is no "magic" involved
 #### 4. Memory-Managed To-Do List
 *The Ultimate C Boss! Learn how to manage the computer's physical RAM.*
 - **[Level 1: Struct-Based Manager](./Projects/C/Beginner-Projects/todo-list/todo-1/)** (Structs, arrays, and menu systems).
-- **[Level 4: Structs and Pointers](./Projects/C/Beginner-Projects/todo-list/todo-4/)** (Using `malloc()` to dynamically allocate memory, and `free()` to prevent leaks!).
+- **[Level 4: Memory Mastery](./Projects/C/Beginner-Projects/todo-list/todo-4/)** (Using `malloc()` to dynamically allocate memory, and `free()` to prevent leaks!).
 
-#### 5. String Operations
+#### 5. Sorting Algorithms
+*Master fundamental algorithms and data manipulation.*
+- **[Level 2: Algorithm Implementation](./Projects/C/Beginner-Projects/sorting-algorithms/sort-1/)** (Bubble, Selection, Insertion sort with performance analysis).
+
+#### 6. String Operations
 *Master string manipulation, character arrays, and text processing.*
 - **[Level 1: Text Processing](./Projects/C/Beginner-Projects/string-operations/string-1/)** (String functions, case conversion, word counting).
 
-#### 📁 6. File Manager
+#### 7. File Manager
 *Learn file I/O, file operations, and persistence.*
 - **[Level 1: Basic File Operations](./Projects/C/Beginner-Projects/file-manager/file-1/)** (Create, read, append, delete files).
 
 ### 🚀 Intermediate Projects
 *These projects require advanced C concepts, file I/O, and data structures.*
 
-#### 🗄️ 1. Student Database System
+#### 1. Student Database System
 *Learn file persistence, data structures, and database concepts.*
 - **[Level 5: File-Based Database](./Projects/C/Intermediate-Projects/database/db-1/)** (Binary file I/O, CRUD operations, statistics).
 
-#### 🌐 2. Network Programming (Coming Soon)
+#### 2. Linked List Data Structure
+*Master dynamic data structures and pointer manipulation.*
+- **[Level 5: Dynamic Structures](./Projects/C/Intermediate-Projects/linked-list/list-1/)** (Node creation, memory management, linked operations).
+
+#### 3. Network Programming (Coming Soon)
 *Learn socket programming, client-server architecture, and network protocols.*
 - **[Level 6: Basic TCP Server](./Projects/C/Intermediate-Projects/network/net-1/)** (Socket programming, client-server communication).
 
