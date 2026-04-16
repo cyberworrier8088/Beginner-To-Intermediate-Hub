@@ -60,7 +60,15 @@ Across all Python projects in this repository, you will find a consistent "Level
 *Learn data structures, search algorithms, and CRUD operations.*
 - **[Level 1: Contact Management](./Projects/Python/Beginner-Projects/contact-book/contact-1/)** (Add, search, update, delete contacts).
 
-####  9. Hello, World! Masterclass
+#### 🌡️ 9. Temperature Converter
+*Learn mathematical operations, functions, and unit conversions.*
+- **[Level 1: Unit Conversion](./Projects/Python/Beginner-Projects/temperature-converter/converter-1/)** (Temperature scales and conversion formulas).
+
+#### 📊 10. Student Grade Manager
+*Learn OOP, data structures, and statistical calculations.*
+- **[Level 1: Grade Management](./Projects/Python/Beginner-Projects/student-grades/grades-1/)** (Classes, averages, letter grades).
+
+####  11. Hello, World! Masterclass
 *The ultimate "Hello, World!" experience - from simplest to most complex methods!*
 - **[Level 1: The Complete Journey](./Projects/Python/Beginner-Projects/Hello, world/)** (35 different methods from beginner to expert level!)
 
@@ -75,7 +83,11 @@ Across all Python projects in this repository, you will find a consistent "Level
 - **[Level 9: The SQLite Database](./Projects/Python/Intermediate-Projects/expense-tracker/expense-9/)** (`sqlite3` built-in library, SQL Queries).
 - **[Level 10: Advanced Reporting](./Projects/Python/Intermediate-Projects/expense-tracker/expense-10/)** (`pip install prettytable`, SQL `SUM` and `GROUP BY`).
 
-#### 🕸️ 3. Web Scraper Data Miner (HTML Parsing)
+#### 🌐 4. Web API Client
+*Learn HTTP requests, JSON parsing, and external service integration.*
+- **[Level 9: API Integration](./Projects/Python/Intermediate-Projects/web-api/api-1/)** (`requests` library, error handling, demo weather API).
+
+#### 🕸️ 5. Web Scraper Data Miner (HTML Parsing)
 - **[Level 9: The HTML Extractor](./Projects/Python/Intermediate-Projects/web-scraper/scraper-9/)** (`pip install beautifulsoup4` to scrape text from websites).
 - **[Level 10: The CSV Exporter](./Projects/Python/Intermediate-Projects/web-scraper/scraper-10/)** (Automatically scraping multi-page sites and saving to Excel `.csv`).
 
@@ -102,13 +114,33 @@ C is a low-level, compiled language. Unlike Python, there is no "magic" involved
 - **[Level 1: Basic Operations](./Projects/C/Beginner-Projects/calculator/calc-1/)** (Switch-case and basic arithmetic).
 - **[Level 2: Modular Design](./Projects/C/Beginner-Projects/calculator/calc-2/)** (Functions and menu systems).
 
-#### 🎲 3. Number Guessing Game
+#### 3. Number Guessing Game
 *Learn randomization, loops, and game logic.*
 - **[Level 1: Basic Game](./Projects/C/Beginner-Projects/number-guesser/guess-1/)** (Random numbers and input validation).
 
-#### 📝 4. Memory-Managed To-Do List
+#### 4. Memory-Managed To-Do List
 *The Ultimate C Boss! Learn how to manage the computer's physical RAM.*
 - **[Level 1: Struct-Based Manager](./Projects/C/Beginner-Projects/todo-list/todo-1/)** (Structs, arrays, and menu systems).
+- **[Level 4: Structs and Pointers](./Projects/C/Beginner-Projects/todo-list/todo-4/)** (Using `malloc()` to dynamically allocate memory, and `free()` to prevent leaks!).
+
+#### 5. String Operations
+*Master string manipulation, character arrays, and text processing.*
+- **[Level 1: Text Processing](./Projects/C/Beginner-Projects/string-operations/string-1/)** (String functions, case conversion, word counting).
+
+#### 📁 6. File Manager
+*Learn file I/O, file operations, and persistence.*
+- **[Level 1: Basic File Operations](./Projects/C/Beginner-Projects/file-manager/file-1/)** (Create, read, append, delete files).
+
+### 🚀 Intermediate Projects
+*These projects require advanced C concepts, file I/O, and data structures.*
+
+#### 🗄️ 1. Student Database System
+*Learn file persistence, data structures, and database concepts.*
+- **[Level 5: File-Based Database](./Projects/C/Intermediate-Projects/database/db-1/)** (Binary file I/O, CRUD operations, statistics).
+
+#### 🌐 2. Network Programming (Coming Soon)
+*Learn socket programming, client-server architecture, and network protocols.*
+- **[Level 6: Basic TCP Server](./Projects/C/Intermediate-Projects/network/net-1/)** (Socket programming, client-server communication).
 
 ---
 *Happy Coding!* 💻
