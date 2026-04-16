@@ -2,6 +2,193 @@
 
 Welcome to the ultimate repository for learning programming! This collection is designed to help learners progress from **absolute beginners** to **intermediate developers** through hands-on projects, now spanning multiple languages!
 
+##  How to Use This Repository
+
+### Quick Start Guide
+
+1. **Choose Your Language**: Pick Python, C, C++, or Rust based on your goals
+2. **Check Prerequisites**: Install required tools (see detailed setup below)
+3. **Start at Level 1**: Begin with beginner projects and work your way up
+4. **Follow the Instructions**: Each project has its own README with detailed steps
+5. **Experiment and Learn**: Modify the code, try new ideas, and have fun!
+
+###  Installation & Setup
+
+#### Python Setup
+```bash
+# Check Python installation
+python --version
+
+# Install dependencies for all projects
+pip install -r requirements.txt
+
+# Run a Python project
+python Projects/Python/Beginner-Projects/calculator/calc-1/calculator.py
+```
+
+**Required for Python:**
+- Python 3.7 or higher
+- pip (Python package manager)
+- IDE or text editor (VS Code recommended)
+
+#### C Setup
+```bash
+# Check GCC installation
+gcc --version
+
+# Compile a C project
+gcc Projects/C/Beginner-Projects/calculator/calc-1/calculator.c -o calculator
+
+# Run the compiled program
+./calculator
+```
+
+**Required for C:**
+- GCC compiler (MinGW-w64 on Windows, build-essential on Linux)
+- Make or build system
+- IDE or text editor
+
+#### C++ Setup
+```bash
+# Check C++ compiler
+g++ --version
+
+# Compile a C++ project
+g++ -std=c++17 Projects/C++/Beginner-Projects/calculator/calc-1/calculator.cpp -o calculator
+
+# Run the compiled program
+./calculator
+```
+
+**Required for C++:**
+- C++17 compatible compiler (g++, clang++, or MSVC)
+- Standard library
+- IDE or text editor
+
+#### Rust Setup
+```bash
+# Install Rust (if not already installed)
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+# Check Rust installation
+rustc --version
+cargo --version
+
+# Run a Rust project
+cd Projects/Rust/Beginner-Projects/hello-rust/hello-1
+cargo run
+```
+
+**Required for Rust:**
+- Rust toolchain (rustup)
+- Cargo (package manager)
+- IDE or text editor
+
+###  Project Structure & Running
+
+#### Python Projects
+```bash
+# Navigate to project
+cd Projects/Python/Beginner-Projects/[project-name]/[level]/
+
+# Install specific dependencies (if requirements.txt exists)
+pip install -r requirements.txt
+
+# Run the program
+python script.py
+```
+
+#### C Projects
+```bash
+# Navigate to project
+cd Projects/C/Beginner-Projects/[project-name]/[level]/
+
+# Compile
+gcc script.c -o program
+
+# Run
+./program
+```
+
+#### C++ Projects
+```bash
+# Navigate to project
+cd Projects/C++/Beginner-Projects/[project-name]/[level]/
+
+# Compile with C++17 standard
+g++ -std=c++17 script.cpp -o program
+
+# Run
+./program
+```
+
+#### Rust Projects
+```bash
+# Navigate to project
+cd Projects/Rust/Beginner-Projects/[project-name]/[level]/
+
+# Run with Cargo (recommended)
+cargo run
+
+# Or compile and run manually
+rustc main.rs
+./main
+```
+
+###  Common Issues & Solutions
+
+#### Python Issues
+- **ModuleNotFoundError**: Run `pip install -r requirements.txt`
+- **Python version**: Ensure you're using Python 3.7+
+- **Path issues**: Use `python` instead of `python3` if needed
+
+#### C/C++ Issues
+- **Compiler not found**: Install GCC/MinGW-w64
+- **Permission denied**: Use `chmod +x program` on Linux/macOS
+- **Linking errors**: Check if you're using the correct compiler flags
+
+#### Rust Issues
+- **Cargo not found**: Install Rust using rustup
+- **Permission denied**: Check file permissions
+- **Compilation errors**: Ensure you're using the correct Rust edition
+
+###  IDE Recommendations
+
+#### Visual Studio Code (All Languages)
+- Extensions: Python, C/C++, Rust
+- Integrated terminal
+- Debugging support
+
+#### PyCharm (Python)
+- Professional Python IDE
+- Built-in debugger
+- Virtual environment support
+
+#### CLion (C/C++/Rust)
+- Professional C/C++ IDE
+- Rust support via plugin
+- Integrated debugger
+
+#### Vim/Emacs (All Languages)
+- Lightweight and powerful
+- Highly customizable
+- Great for learning
+
+###  Learning Path
+
+1. **Start Simple**: Begin with "Hello, World!" projects
+2. **Progress Gradually**: Move through levels 1-10
+3. **Experiment**: Modify code and see what happens
+4. **Build Projects**: Create your own variations
+5. **Share**: Contribute back to the repository
+
+###  Getting Help
+
+- **Project READMEs**: Each project has detailed instructions
+- **Code Comments**: Extensive explanations in the code
+- **Community**: Ask questions in GitHub discussions
+- **Documentation**: Check language-specific documentation
+
 ## 📚 Quick Start Guide
 
 ### 📝 For Complete Beginners
@@ -151,7 +338,51 @@ Across all Python projects in this repository, you will find a consistent "Level
 
 ---
 
-## C PROGRAMMING
+##  C++ PROGRAMMING
+
+###  C++ Level System
+C++ bridges the gap between low-level control and high-level abstraction:
+- **Level 1-2**: Modern C++ syntax, classes, and OOP
+- **Level 3-4**: STL containers, smart pointers, and memory management
+- **Level 5-6**: Template programming and advanced features
+- **Level 7-8**: GUI programming with Qt or frameworks
+- **Level 9-10**: Performance optimization and systems programming
+
+###  C++ Beginner Projects
+
+####  1. Hello World Modern C++
+*Learn modern C++ syntax, classes, and standard library features.*
+- **[Level 1: Modern C++ Introduction](./Projects/C++/Beginner-Projects/hello-cpp/hello-1/)** (Auto keyword, smart pointers, lambda expressions).
+
+####  2. Object-Oriented Calculator
+*Master C++ classes, methods, and exception handling.*
+- **[Level 2: OOP Calculator](./Projects/C++/Beginner-Projects/calculator/calc-1/)** (Class design, method overloading, input validation).
+
+---
+
+##  RUST PROGRAMMING
+
+###  Rust Level System
+Rust provides safety without sacrificing performance:
+- **Level 1-2**: Ownership, borrowing, and basic syntax
+- **Level 3-4**: Pattern matching, error handling, and collections
+- **Level 5-6**: Lifetimes, traits, and advanced features
+- **Level 7-8**: Concurrent programming and async
+- **Level 9-10**: Systems programming and performance
+
+###  Rust Beginner Projects
+
+####  1. Hello World Safe Systems
+*Learn Rust's ownership system, pattern matching, and memory safety.*
+- **[Level 1: Safe Systems Programming](./Projects/Rust/Beginner-Projects/hello-rust/hello-1/)** (Ownership, borrowing, Result type, modern syntax).
+
+####  2. Safe Calculator
+*Master Rust's safety guarantees and modern syntax.*
+- **[Level 2: Safe Calculator](./Projects/Rust/Beginner-Projects/calculator/calc-1/)** (Pattern matching, error handling, structs, enums).
+
+---
+
+##  C PROGRAMMING
 C is a low-level, compiled language. Unlike Python, there is no "magic" involved. We must declare our variables strictly and manually build our logic. 
 *Note: To run these, you require a compiler like `gcc` (MinGW-w64 on Windows).*
 
@@ -196,6 +427,10 @@ C is a low-level, compiled language. Unlike Python, there is no "magic" involved
 #### 7. File Manager
 *Learn file I/O, file operations, and persistence.*
 - **[Level 1: Basic File Operations](./Projects/C/Beginner-Projects/file-manager/file-1/)** (Create, read, append, delete files).
+
+###  Network Programming (Level 6)
+*Learn socket programming, client-server architecture, and network protocols.*
+- **[Level 6: TCP Server](./Projects/C/Beginner-Projects/network-programming/net-1/)** (Socket programming, multi-client handling, select()).
 
 ### 🚀 Intermediate Projects
 *These projects require advanced C concepts, file I/O, and data structures.*
