@@ -1,0 +1,941 @@
+/*
+ * Professional Portfolio Responsive CSS - Level 4: Mobile-First Design
+ * 
+ * Welcome to responsive design! This is where designs adapt to all devices.
+ * Learn modern responsive techniques and mobile optimization.
+ * 
+ * Key concepts you'll learn:
+ * - Mobile-first design principles
+ * - CSS Grid and Flexbox responsive layouts
+ * - Media queries and breakpoints
+ * - Touch-friendly interfaces
+ * - Performance optimization for mobile
+ * - Cross-device compatibility
+ * - Human-like code with detailed comments!
+ */
+
+/* Mobile-First Base Styles */
+/* These styles apply to all devices and are optimized for mobile */
+
+/* Enhanced Mobile Navigation */
+.nav-toggle {
+    display: flex;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: var(--space-2);
+    z-index: var(--z-dropdown);
+}
+
+.nav-toggle.active .hamburger-line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.nav-toggle.active .hamburger-line:nth-child(2) {
+    opacity: 0;
+}
+
+.nav-toggle.active .hamburger-line:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+}
+
+.nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    max-width: 400px;
+    height: 100vh;
+    background: var(--white);
+    flex-direction: column;
+    padding: var(--space-20) var(--space-6);
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    transition: right var(--transition-normal);
+    z-index: var(--z-dropdown);
+}
+
+.nav-menu.active {
+    right: 0;
+}
+
+.nav-menu .nav-link {
+    display: block;
+    padding: var(--space-4) 0;
+    font-size: var(--font-size-lg);
+    border-bottom: 1px solid var(--gray-200);
+}
+
+.nav-menu .nav-link:last-child {
+    border-bottom: none;
+}
+
+/* Mobile Hero Section */
+.hero-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: var(--space-8);
+    padding: var(--space-6);
+}
+
+.hero-title {
+    font-size: var(--font-size-4xl);
+}
+
+.hero-title .greeting {
+    font-size: var(--font-size-lg);
+}
+
+.hero-title .name {
+    font-size: var(--font-size-3xl);
+}
+
+.hero-title .title {
+    font-size: var(--font-size-xl);
+}
+
+.hero-description {
+    font-size: var(--font-size-base);
+    max-width: 100%;
+}
+
+.hero-cta {
+    flex-direction: column;
+    gap: var(--space-3);
+}
+
+.hero-social {
+    justify-content: center;
+}
+
+.hero-visual {
+    order: -1;
+}
+
+.code-animation {
+    font-size: var(--font-size-xs);
+    padding: var(--space-4);
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+/* Mobile About Section */
+.about-content {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+}
+
+.about-stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-3);
+}
+
+.stat-item {
+    padding: var(--space-3);
+}
+
+.stat-number {
+    font-size: var(--font-size-2xl);
+}
+
+.about-visual {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+}
+
+/* Mobile Skills Section */
+.skills-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+}
+
+.skill-item {
+    flex-direction: column;
+    text-align: center;
+    padding: var(--space-3);
+}
+
+.skill-icon {
+    width: 80px;
+    height: 80px;
+    font-size: var(--font-size-3xl);
+    margin-bottom: var(--space-3);
+}
+
+/* Mobile Projects Section */
+.projects-filter {
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-2);
+}
+
+.filter-btn {
+    width: 100%;
+    max-width: 200px;
+}
+
+.projects-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+}
+
+.project-card {
+    max-width: 100%;
+}
+
+/* Mobile Experience Section */
+.timeline::before {
+    left: 20px;
+}
+
+.timeline-item {
+    flex-direction: column;
+    padding-left: var(--space-12);
+}
+
+.timeline-item:nth-child(odd) {
+    flex-direction: column;
+}
+
+.timeline-date {
+    flex: none;
+    width: auto;
+    margin: 0 0 var(--space-4) 0;
+    align-self: flex-start;
+}
+
+.timeline-content {
+    width: 100%;
+}
+
+.timeline-content::before {
+    display: none;
+}
+
+/* Mobile Contact Section */
+.contact-content {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+}
+
+.contact-info {
+    order: 2;
+}
+
+.contact-form {
+    order: 1;
+}
+
+.form {
+    padding: var(--space-6);
+}
+
+/* Mobile Footer */
+.footer-content {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+    text-align: center;
+}
+
+.footer-column {
+    margin-bottom: var(--space-6);
+}
+
+/* Mobile Back to Top Button */
+.back-to-top {
+    bottom: var(--space-4);
+    right: var(--space-4);
+    width: 44px;
+    height: 44px;
+}
+
+/* Touch-Friendly Adjustments */
+.btn {
+    min-height: 44px; /* iOS touch target minimum */
+    padding: var(--space-3) var(--space-4);
+}
+
+.nav-link,
+.filter-btn,
+.social-link {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Mobile Typography Adjustments */
+.section-title {
+    font-size: var(--font-size-3xl);
+}
+
+.section-subtitle {
+    font-size: var(--font-size-base);
+}
+
+/* Mobile Spacing Adjustments */
+section {
+    padding: var(--space-12) 0;
+}
+
+.section-header {
+    margin-bottom: var(--space-8);
+}
+
+/* Mobile Performance Optimizations */
+.hero-section {
+    background-attachment: scroll; /* Disable parallax on mobile */
+}
+
+.code-animation {
+    background: rgba(0, 0, 0, 0.5); /* Darker background for better contrast */
+}
+
+/* Mobile Animations - Reduced motion for better performance */
+@media (max-width: 768px) {
+    .hero-title,
+    .section-title {
+        animation: fadeIn 0.8s ease-out forwards;
+    }
+    
+    .skill-item,
+    .project-card,
+    .timeline-item {
+        animation: slideInUp 0.6s ease-out forwards;
+    }
+    
+    /* Disable some resource-intensive animations on mobile */
+    .code-animation::before {
+        display: none;
+    }
+    
+    .glow {
+        animation: none;
+    }
+}
+
+/* Tablet Styles (768px and up) */
+@media (min-width: 768px) {
+    /* Restore Desktop Navigation */
+    .nav-toggle {
+        display: none;
+    }
+    
+    .nav-menu {
+        position: static;
+        width: auto;
+        height: auto;
+        background: transparent;
+        flex-direction: row;
+        padding: 0;
+        box-shadow: none;
+        transition: none;
+    }
+    
+    .nav-menu .nav-link {
+        display: inline-block;
+        padding: var(--space-2) var(--space-3);
+        font-size: var(--font-size-base);
+        border-bottom: none;
+    }
+    
+    /* Tablet Hero */
+    .hero-container {
+        grid-template-columns: 1fr 1fr;
+        text-align: left;
+        gap: var(--space-12);
+        padding: var(--space-8);
+    }
+    
+    .hero-title {
+        font-size: var(--font-size-5xl);
+    }
+    
+    .hero-cta {
+        flex-direction: row;
+        gap: var(--space-4);
+    }
+    
+    .hero-social {
+        justify-content: flex-start;
+    }
+    
+    .hero-visual {
+        order: 2;
+    }
+    
+    /* Tablet About */
+    .about-content {
+        grid-template-columns: 2fr 1fr;
+        gap: var(--space-12);
+    }
+    
+    .about-stats {
+        grid-template-columns: repeat(4, 1fr);
+        gap: var(--space-4);
+    }
+    
+    .about-visual {
+        position: sticky;
+        top: var(--space-20);
+    }
+    
+    /* Tablet Skills */
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-6);
+    }
+    
+    .skill-item {
+        flex-direction: row;
+        text-align: left;
+        padding: var(--space-4);
+    }
+    
+    .skill-icon {
+        width: 60px;
+        height: 60px;
+        font-size: var(--font-size-2xl);
+        margin-bottom: 0;
+    }
+    
+    /* Tablet Projects */
+    .projects-filter {
+        flex-direction: row;
+        gap: var(--space-4);
+    }
+    
+    .filter-btn {
+        width: auto;
+    }
+    
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-8);
+    }
+    
+    /* Tablet Experience */
+    .timeline::before {
+        left: 50%;
+    }
+    
+    .timeline-item {
+        flex-direction: row;
+        padding-left: 0;
+        gap: var(--space-8);
+    }
+    
+    .timeline-item:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
+    
+    .timeline-date {
+        flex: 0 0 150px;
+        margin: 0;
+        align-self: center;
+    }
+    
+    .timeline-content::before {
+        display: block;
+    }
+    
+    /* Tablet Contact */
+    .contact-content {
+        grid-template-columns: 1fr 2fr;
+        gap: var(--space-12);
+    }
+    
+    .contact-info {
+        order: 1;
+    }
+    
+    .contact-form {
+        order: 2;
+    }
+    
+    .form {
+        padding: var(--space-8);
+    }
+    
+    /* Tablet Footer */
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-8);
+        text-align: left;
+    }
+    
+    /* Tablet Typography */
+    .section-title {
+        font-size: var(--font-size-4xl);
+    }
+    
+    .section-subtitle {
+        font-size: var(--font-size-lg);
+    }
+    
+    /* Tablet Spacing */
+    section {
+        padding: var(--space-16) 0;
+    }
+    
+    .section-header {
+        margin-bottom: var(--space-12);
+    }
+}
+
+/* Desktop Styles (1024px and up) */
+@media (min-width: 1024px) {
+    /* Enhanced Desktop Layout */
+    .hero-container {
+        gap: var(--space-16);
+        padding: var(--space-12);
+    }
+    
+    .hero-title {
+        font-size: var(--font-size-6xl);
+    }
+    
+    .hero-description {
+        font-size: var(--font-size-lg);
+    }
+    
+    /* Desktop Skills */
+    .skills-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--space-6);
+    }
+    
+    /* Desktop Projects */
+    .projects-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--space-8);
+    }
+    
+    /* Desktop Footer */
+    .footer-content {
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        gap: var(--space-8);
+    }
+    
+    /* Enhanced Desktop Animations */
+    .hero-section {
+        background-attachment: fixed; /* Enable parallax on desktop */
+    }
+    
+    .code-animation::before {
+        display: block;
+    }
+    
+    .glow {
+        animation: glow 2s ease-in-out infinite;
+    }
+}
+
+/* Large Desktop Styles (1440px and up) */
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1400px;
+    }
+    
+    .hero-container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .projects-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Ultra-wide Screens (1920px and up) */
+@media (min-width: 1920px) {
+    .container {
+        max-width: 1600px;
+    }
+    
+    .hero-title {
+        font-size: 4.5rem;
+    }
+    
+    .section-title {
+        font-size: 3.5rem;
+    }
+}
+
+/* High DPI / Retina Displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .code-animation {
+        font-size: calc(var(--font-size-xs) * 0.9); /* Slightly smaller font for better rendering */
+    }
+}
+
+/* Landscape Orientation Adjustments */
+@media (max-width: 768px) and (orientation: landscape) {
+    .hero-section {
+        min-height: auto;
+        padding: var(--space-8) 0;
+    }
+    
+    .hero-container {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+    
+    .hero-title {
+        font-size: var(--font-size-3xl);
+    }
+    
+    .about-stats {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .timeline-item {
+        padding-left: var(--space-8);
+    }
+}
+
+/* Small Mobile Devices (320px - 480px) */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 var(--space-3);
+    }
+    
+    .hero-title {
+        font-size: var(--font-size-3xl);
+    }
+    
+    .hero-title .name {
+        font-size: var(--font-size-2xl);
+    }
+    
+    .hero-title .title {
+        font-size: var(--font-size-lg);
+    }
+    
+    .section-title {
+        font-size: var(--font-size-2xl);
+    }
+    
+    .btn {
+        padding: var(--space-3) var(--space-4);
+        font-size: var(--font-size-sm);
+    }
+    
+    .project-card {
+        border-radius: var(--radius-lg);
+    }
+    
+    .form {
+        padding: var(--space-4);
+    }
+    
+    .skill-icon {
+        width: 60px;
+        height: 60px;
+        font-size: var(--font-size-2xl);
+    }
+    
+    .social-link {
+        width: 40px;
+        height: 40px;
+        font-size: var(--font-size-base);
+    }
+}
+
+/* Medium Mobile Devices (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    .hero-title {
+        font-size: var(--font-size-4xl);
+    }
+    
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-6);
+    }
+    
+    .about-stats {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Print Styles */
+@media print {
+    /* Hide non-essential elements */
+    .nav-toggle,
+    .hero-scroll,
+    .back-to-top,
+    .contact-form,
+    .project-overlay,
+    .filter-btn {
+        display: none !important;
+    }
+    
+    /* Optimize text and layout */
+    body {
+        font-size: 12pt;
+        line-height: 1.4;
+        color: #000;
+        background: #fff;
+    }
+    
+    .container {
+        max-width: none;
+        padding: 0;
+    }
+    
+    .hero-section {
+        background: none;
+        color: #000;
+        min-height: auto;
+        padding: 2rem 0;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+        color: #000;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+        color: #000;
+    }
+    
+    /* Ensure links don't break */
+    a {
+        color: #000;
+        text-decoration: underline;
+    }
+    
+    /* Optimize project cards */
+    .project-card {
+        break-inside: avoid;
+        box-shadow: none;
+        border: 1px solid #ccc;
+        margin-bottom: 1rem;
+    }
+    
+    /* Optimize timeline */
+    .timeline::before {
+        background: #000;
+    }
+    
+    .timeline-content {
+        box-shadow: none;
+        border: 1px solid #ccc;
+    }
+    
+    /* Page breaks */
+    section {
+        page-break-inside: avoid;
+        break-after: always;
+    }
+    
+    .project-card,
+    .timeline-item {
+        page-break-inside: avoid;
+    }
+}
+
+/* Reduced Motion Preferences */
+@media (prefers-reduced-motion: reduce) {
+    /* Disable animations for users who prefer reduced motion */
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+    
+    /* Keep essential transitions but make them instant */
+    .nav-link,
+    .btn,
+    .project-card {
+        transition: none;
+    }
+    
+    /* Remove parallax effects */
+    .hero-section {
+        background-attachment: scroll;
+    }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --white: #1a1a1a;
+        --gray-50: #2d2d2d;
+        --gray-100: #404040;
+        --gray-200: #595959;
+        --gray-300: #737373;
+        --gray-400: #8c8c8c;
+        --gray-500: #a6a6a6;
+        --gray-600: #bfbfbf;
+        --gray-700: #d9d9d9;
+        --gray-800: #f0f0f0;
+        --gray-900: #ffffff;
+    }
+    
+    /* Adjust mobile-specific dark mode styles */
+    .nav-menu {
+        background: var(--gray-100);
+    }
+    
+    .code-animation {
+        background: rgba(0, 0, 0, 0.7);
+    }
+    
+    .form {
+        background: var(--gray-50);
+    }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+    :root {
+        --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+        --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+        --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.3);
+    }
+    
+    .btn {
+        border-width: 3px;
+    }
+    
+    .nav-link:focus {
+        outline-width: 3px;
+    }
+}
+
+/* Mobile Landscape Specific Optimizations */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero-section {
+        min-height: auto;
+        padding: var(--space-4) 0;
+    }
+    
+    .nav-menu {
+        height: auto;
+        max-height: 100vh;
+        overflow-y: auto;
+    }
+    
+    .hero-scroll {
+        display: none;
+    }
+}
+
+/* Touch Device Optimizations */
+@media (hover: none) and (pointer: coarse) {
+    /* Remove hover effects on touch devices */
+    .project-card:hover .project-overlay,
+    .btn:hover::before,
+    .nav-link::after {
+        display: none;
+    }
+    
+    /* Increase touch targets */
+    .btn,
+    .nav-link,
+    .social-link,
+    .filter-btn {
+        min-height: 48px;
+        min-width: 48px;
+    }
+    
+    /* Add active states for touch feedback */
+    .btn:active,
+    .nav-link:active,
+    .social-link:active {
+        transform: scale(0.95);
+        opacity: 0.8;
+    }
+}
+
+/* Responsive Utility Classes */
+.mobile-only {
+    display: block;
+}
+
+.tablet-up {
+    display: none;
+}
+
+.desktop-up {
+    display: none;
+}
+
+/* Responsive visibility classes */
+@media (min-width: 768px) {
+    .mobile-only {
+        display: none;
+    }
+    
+    .tablet-up {
+        display: block;
+    }
+}
+
+@media (min-width: 1024px) {
+    .tablet-up {
+        display: none;
+    }
+    
+    .desktop-up {
+        display: block;
+    }
+}
+
+/* Responsive text sizing */
+.responsive-text-xs {
+    font-size: var(--font-size-xs);
+}
+
+.responsive-text-sm {
+    font-size: var(--font-size-sm);
+}
+
+.responsive-text-base {
+    font-size: var(--font-size-base);
+}
+
+.responsive-text-lg {
+    font-size: var(--font-size-lg);
+}
+
+.responsive-text-xl {
+    font-size: var(--font-size-xl);
+}
+
+.responsive-text-2xl {
+    font-size: var(--font-size-2xl);
+}
+
+/* Responsive text sizing for different screens */
+@media (max-width: 480px) {
+    .responsive-text-2xl {
+        font-size: var(--font-size-xl);
+    }
+    
+    .responsive-text-3xl {
+        font-size: var(--font-size-2xl);
+    }
+}
+
+@media (min-width: 768px) {
+    .responsive-text-2xl {
+        font-size: var(--font-size-2xl);
+    }
+    
+    .responsive-text-3xl {
+        font-size: var(--font-size-3xl);
+    }
+}
+
+@media (min-width: 1024px) {
+    .responsive-text-3xl {
+        font-size: var(--font-size-4xl);
+    }
+}

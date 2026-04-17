@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Web - Your First Web Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Main Container - The building block of all web pages -->
+    <div class="container">
+        
+        <!-- Header Section - Where your page title lives -->
+        <header class="header">
+            <h1>Welcome to Web Development!</h1>
+            <p class="subtitle">Your journey starts here</p>
+        </header>
+
+        <!-- Main Content - The heart of your page -->
+        <main class="main-content">
+            
+            <!-- Introduction Section -->
+            <section class="intro-section">
+                <h2>What is Web Development?</h2>
+                <p>
+                    Web development is the art of creating websites and web applications. 
+                    It combines creativity with technical skills to build amazing online experiences.
+                </p>
+                <div class="highlight-box">
+                    <p>HTML provides the <strong>structure</strong>, CSS adds the <strong>style</strong>, and JavaScript brings <strong>interactivity</strong>.</p>
+                </div>
+            </section>
+
+            <!-- Learning Path Section -->
+            <section class="learning-path">
+                <h2>Your Learning Journey</h2>
+                <div class="path-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>HTML Basics</h3>
+                            <p>Learn the building blocks of web pages</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>CSS Fundamentals</h3>
+                            <p>Make your pages beautiful and responsive</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>JavaScript Magic</h3>
+                            <p>Add interactivity and dynamic behavior</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Interactive Demo Section -->
+            <section class="demo-section">
+                <h2>Try It Yourself!</h2>
+                <div class="interactive-demo">
+                    <button class="demo-button" onclick="changeColor()">Change Background Color</button>
+                    <button class="demo-button" onclick="addText()">Add Some Text</button>
+                    <button class="demo-button" onclick="toggleVisibility()">Toggle Visibility</button>
+                </div>
+                <div id="demo-output" class="demo-output">
+                    <p>Click the buttons above to see magic happen!</p>
+                </div>
+            </section>
+
+            <!-- Key Concepts Section -->
+            <section class="concepts-section">
+                <h2>Key Concepts You'll Learn</h2>
+                <div class="concepts-grid">
+                    <div class="concept-card">
+                        <h3>HTML Elements</h3>
+                        <p>The building blocks that structure your content</p>
+                    </div>
+                    <div class="concept-card">
+                        <h3>CSS Selectors</h3>
+                        <p>How to target and style specific elements</p>
+                    </div>
+                    <div class="concept-card">
+                        <h3>Box Model</h3>
+                        <p>Understanding margins, padding, and borders</p>
+                    </div>
+                    <div class="concept-card">
+                        <h3>Responsive Design</h3>
+                        <p>Making your site work on all devices</p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Footer Section -->
+        <footer class="footer">
+            <p>&copy; 2024 Beginner Projects. Made with <span class="heart">heart</span> for learners.</p>
+        </footer>
+
+    </div>
+
+    <!-- JavaScript for interactivity -->
+    <script src="script.js"></script>
+</body>
+</html>

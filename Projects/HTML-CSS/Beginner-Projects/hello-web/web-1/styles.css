@@ -1,0 +1,376 @@
+/* 
+ * CSS Stylesheet for Hello Web - Level 1: Web Development Fundamentals
+ * 
+ * Welcome to CSS! This is where design meets code.
+ * Learn how to make web pages beautiful and responsive.
+ * 
+ * Key concepts you'll learn:
+ * - CSS selectors and properties
+ * - The box model (margin, padding, border)
+ * - Flexbox layout system
+ * - Responsive design principles
+ * - Color theory and typography
+ * - Human-like code with detailed comments!
+ */
+
+/* Global Reset - Remove default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles - The foundation of our page */
+body {
+    font-family: 'Arial', sans-serif; /* Clean, readable font */
+    line-height: 1.6; /* Comfortable spacing between lines */
+    color: #333; /* Dark gray for text (easier on eyes than pure black) */
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* Beautiful gradient background */
+    min-height: 100vh; /* Full viewport height */
+}
+
+/* Main Container - Center content and add padding */
+.container {
+    max-width: 1200px; /* Maximum width for large screens */
+    margin: 0 auto; /* Center horizontally */
+    padding: 20px; /* Space around content */
+    background-color: rgba(255, 255, 255, 0.95); /* Semi-transparent white */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    margin-top: 20px; /* Space from top of screen */
+    margin-bottom: 20px; /* Space from bottom of screen */
+}
+
+/* Header Section - Make it stand out */
+.header {
+    text-align: center; /* Center the text */
+    padding: 40px 0; /* Generous padding */
+    background: linear-gradient(45deg, #ff6b6b, #ee5a24); /* Warm gradient */
+    color: white; /* White text for contrast */
+    border-radius: 10px; /* Rounded corners */
+    margin-bottom: 30px; /* Space below header */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.header h1 {
+    font-size: 2.5em; /* Large, impressive title */
+    margin-bottom: 10px; /* Space below title */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Text shadow for depth */
+}
+
+.subtitle {
+    font-size: 1.2em; /* Larger subtitle */
+    opacity: 0.9; /* Slightly transparent */
+    font-style: italic; /* Italic for elegance */
+}
+
+/* Main Content - The heart of our page */
+.main-content {
+    padding: 20px 0; /* Vertical padding */
+}
+
+/* Section Styling - Consistent section layout */
+section {
+    margin-bottom: 40px; /* Space between sections */
+    padding: 30px; /* Internal padding */
+    background-color: #f8f9fa; /* Light gray background */
+    border-radius: 8px; /* Rounded corners */
+    border-left: 5px solid #007bff; /* Blue left border for emphasis */
+}
+
+section h2 {
+    color: #007bff; /* Blue for headings */
+    margin-bottom: 20px; /* Space below heading */
+    font-size: 1.8em; /* Large heading */
+    border-bottom: 2px solid #007bff; /* Underline */
+    padding-bottom: 10px; /* Space for underline */
+}
+
+/* Introduction Section - Special styling */
+.intro-section p {
+    font-size: 1.1em; /* Slightly larger text */
+    margin-bottom: 20px; /* Space below paragraph */
+    line-height: 1.8; /* Extra line spacing for readability */
+}
+
+.highlight-box {
+    background: linear-gradient(45deg, #f093fb 0%, #f5576c 100%); /* Vibrant gradient */
+    color: white; /* White text */
+    padding: 20px; /* Generous padding */
+    border-radius: 8px; /* Rounded corners */
+    text-align: center; /* Center text */
+    font-size: 1.1em; /* Larger text */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Shadow */
+    margin-top: 20px; /* Space above */
+}
+
+.highlight-box strong {
+    color: #ffeb3b; /* Yellow highlight for emphasis */
+    font-weight: bold; /* Extra bold */
+}
+
+/* Learning Path Section - Step-by-step layout */
+.path-steps {
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Even spacing */
+    gap: 20px; /* Space between steps */
+    flex-wrap: wrap; /* Wrap on small screens */
+}
+
+.step {
+    flex: 1; /* Equal width for all steps */
+    min-width: 250px; /* Minimum width */
+    background: white; /* White background */
+    padding: 20px; /* Internal padding */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center; /* Center content */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.step:hover {
+    transform: translateY(-5px); /* Lift up on hover */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+.step-number {
+    width: 50px; /* Circle size */
+    height: 50px; /* Circle size */
+    background: linear-gradient(45deg, #4facfe 0%, #00f2fe 100%); /* Blue gradient */
+    color: white; /* White text */
+    border-radius: 50%; /* Perfect circle */
+    display: flex; /* Flexbox for centering */
+    align-items: center; /* Vertical center */
+    justify-content: center; /* Horizontal center */
+    font-size: 1.5em; /* Large number */
+    font-weight: bold; /* Bold number */
+    margin: 0 auto 15px; /* Center and space below */
+}
+
+.step-content h3 {
+    color: #333; /* Dark text */
+    margin-bottom: 10px; /* Space below heading */
+}
+
+.step-content p {
+    color: #666; /* Lighter text */
+    font-size: 0.9em; /* Slightly smaller */
+}
+
+/* Demo Section - Interactive elements */
+.demo-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* Purple gradient */
+    color: white; /* White text */
+}
+
+.demo-section h2 {
+    color: white; /* White heading */
+    border-bottom-color: white; /* White underline */
+}
+
+.interactive-demo {
+    display: flex; /* Flexbox layout */
+    gap: 15px; /* Space between buttons */
+    justify-content: center; /* Center buttons */
+    margin-bottom: 20px; /* Space below */
+    flex-wrap: wrap; /* Wrap on small screens */
+}
+
+.demo-button {
+    background: linear-gradient(45deg, #ff6b6b, #ee5a24); /* Orange gradient */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 12px 24px; /* Generous padding */
+    border-radius: 25px; /* Rounded button */
+    font-size: 1em; /* Standard font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: all 0.3s ease; /* Smooth transitions */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow */
+}
+
+.demo-button:hover {
+    transform: translateY(-2px); /* Lift up on hover */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+}
+
+.demo-button:active {
+    transform: translateY(0); /* Press down effect */
+}
+
+.demo-output {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+    padding: 20px; /* Internal padding */
+    border-radius: 8px; /* Rounded corners */
+    border: 2px solid rgba(255, 255, 255, 0.3); /* Subtle border */
+    text-align: center; /* Center text */
+    min-height: 60px; /* Minimum height */
+    display: flex; /* Flexbox for centering */
+    align-items: center; /* Vertical center */
+    justify-content: center; /* Horizontal center */
+}
+
+/* Concepts Section - Grid layout */
+.concepts-grid {
+    display: grid; /* CSS Grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between cards */
+    margin-top: 20px; /* Space above */
+}
+
+.concept-card {
+    background: white; /* White background */
+    padding: 25px; /* Generous padding */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center; /* Center content */
+    transition: all 0.3s ease; /* Smooth transitions */
+    border-top: 4px solid #28a745; /* Green top border */
+}
+
+.concept-card:hover {
+    transform: translateY(-3px); /* Lift up on hover */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+.concept-card h3 {
+    color: #28a745; /* Green heading */
+    margin-bottom: 15px; /* Space below heading */
+    font-size: 1.3em; /* Larger heading */
+}
+
+.concept-card p {
+    color: #666; /* Gray text */
+    line-height: 1.6; /* Good line spacing */
+}
+
+/* Footer Section - Bottom of the page */
+.footer {
+    text-align: center; /* Center text */
+    padding: 20px 0; /* Vertical padding */
+    background: linear-gradient(45deg, #333, #555); /* Dark gradient */
+    color: white; /* White text */
+    border-radius: 10px; /* Rounded corners */
+    margin-top: 30px; /* Space above */
+}
+
+.heart {
+    color: #e74c3c; /* Red heart */
+    font-size: 1.2em; /* Slightly larger */
+}
+
+/* Responsive Design - Make it work on all devices */
+
+/* Tablets and smaller screens */
+@media (max-width: 768px) {
+    .container {
+        margin: 10px; /* Smaller margin */
+        padding: 15px; /* Smaller padding */
+    }
+    
+    .header h1 {
+        font-size: 2em; /* Smaller title */
+    }
+    
+    .path-steps {
+        flex-direction: column; /* Stack steps vertically */
+    }
+    
+    .step {
+        margin-bottom: 15px; /* Space between stacked steps */
+    }
+    
+    .concepts-grid {
+        grid-template-columns: 1fr; /* Single column on small screens */
+    }
+    
+    .interactive-demo {
+        flex-direction: column; /* Stack buttons */
+        align-items: center; /* Center buttons */
+    }
+    
+    .demo-button {
+        width: 100%; /* Full width buttons */
+        max-width: 300px; /* Maximum width */
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+    .container {
+        margin: 5px; /* Very small margin */
+        padding: 10px; /* Minimal padding */
+    }
+    
+    .header {
+        padding: 20px 0; /* Smaller header padding */
+    }
+    
+    .header h1 {
+        font-size: 1.5em; /* Much smaller title */
+    }
+    
+    .subtitle {
+        font-size: 1em; /* Smaller subtitle */
+    }
+    
+    section {
+        padding: 20px; /* Smaller section padding */
+    }
+    
+    section h2 {
+        font-size: 1.5em; /* Smaller headings */
+    }
+    
+    .concept-card {
+        padding: 15px; /* Smaller card padding */
+    }
+}
+
+/* Animation Classes - For JavaScript interactions */
+.fade-in {
+    animation: fadeIn 0.5s ease-in; /* Fade in animation */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); } /* Start transparent and down */
+    to { opacity: 1; transform: translateY(0); } /* End visible and normal position */
+}
+
+.slide-in {
+    animation: slideIn 0.5s ease-out; /* Slide in animation */
+}
+
+@keyframes slideIn {
+    from { transform: translateX(-100%); } /* Start off-screen left */
+    to { transform: translateX(0); } /* End in normal position */
+}
+
+/* Utility Classes - Reusable styles */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+.mt-10 { margin-top: 10px; }
+.mt-20 { margin-top: 20px; }
+.mb-10 { margin-bottom: 10px; }
+.mb-20 { margin-bottom: 20px; }
+
+.p-10 { padding: 10px; }
+.p-20 { padding: 20px; }
+
+/* Print Styles - For when users print the page */
+@media print {
+    body {
+        background: white; /* White background for printing */
+        color: black; /* Black text for printing */
+    }
+    
+    .container {
+        box-shadow: none; /* No shadow in print */
+        background: white; /* White background */
+    }
+    
+    .demo-button {
+        display: none; /* Hide buttons in print */
+    }
+}
